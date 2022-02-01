@@ -1,0 +1,229 @@
+// solucion
+
+1. Inicio
+2. funcion principal()
+3.   numero, i[0-n]
+4.   condición, l[0-n] <-- True
+4.   contador, i[0-n] <-- 0
+5.   Mientras (condicion) entonces
+6.     Escribir "Ingrese 1 para crear una cuenta en Facebook - Ingrese 2 para crear una cuenta en Twitter - Ingrese 3 para crear una cuenta en Whatsapp - 
+                 Ingrese 4 para crear una cuenta en Telegram - Ingrese 5 para crear una cuenta en Signal - Ingrese 6 para crear una cuenta en Instagram - 
+                 Ingrese 7 para crear una cuenta en Flickr"
+7.     Si numero == 1 entonces
+8.        crearFacebook()
+9.     Caso contrario
+10.       Si numero == 2 entonces
+11.          crearTwitter()
+12.       Caso contrario
+13.          Si numero == 3 entonces
+14.             crearWhatsapp()
+15.          Caso contrario
+16.             Si numero == 4 entonces
+17.                crearTelegram()
+18.             Caso contrario
+19.                Si numero == 5 entonces
+20.                   crearSignal()
+21.                Caso contrario
+22.                   Si numero == 6 entonces
+23.                      crearInstagram()
+24.                   Caso contrario
+25.                      Si numero == 7 entonces
+26.                         crearFlickr()
+27.                      Caso contrario
+28.                         Escribir "Error número fuera de rango"
+29.                      Fin_Si
+30.                   Fin_Si
+31.                Fin_Si
+32.             Fin_Si
+33.          Fin_Si
+34.       Fin_Si
+35.    Fin_Si
+36.    salida = Escribir "Ingrese no para seguir ingresando datos de cuentas o si para salir"
+37.    Si salida == "si" entonces
+38.       condicion = False
+       Caso contrario
+39.       contador <-- contador + 1
+40.    Fin_Si
+41.  Fin_Mientras
+42.  obtenerMensaje(contador)
+43. fin funcion principal
+
+
+44. funcion crearFacebook()
+45. nombreUsuario, x(50)[{a-z}, {A-B}, "BS"]
+46. edad, i[0-n]
+47. ciudad, x(50)[{a-z}, {A-Z}, "BS"]
+48. pais, x(50)[{a-z}, {A-Z}, "BS"]
+49. correo, x(50)[{a-z}, {A-Z}, "BS"]
+50. datosFacebook, x(50)[{a-z}, {A-Z}, "BS"]
+
+51. Escribir "Ingresar el nombre del usuario"
+52. Leer nombreUsuario
+53. Escribir "Ingresar la edad"
+54. Leer edad
+55. Escribir "Ingresar la ciudad"
+56. Leer ciudad
+57. Escribir "Ingresar el país"
+58. Leer país
+59. Escribir "Ingresar el correo"
+60. Leer correo
+
+61. datosFacebook <-- "Los datos para facebook son: " + nombreUsuario + edad + ciudad + pais + correo
+62. Escribir datosFacebook
+63. fin funcion crearFacebook
+
+
+64. funcion crearTwitter()
+65. nombreUsuario, x(50)[{a-z}, {A-Z}, "BS"]
+66. nombres, x(50)[{a-z}, {A-Z}, "BS"]
+67. apellidos, x(50)[{a-z}, {A-Z}, "BS"]
+68. edad, i[0-n]
+69. ciudad, x(50)[{a-z}, {A-Z}, "BS"]
+70. pais, x(50)[{a-z}, {A-Z}, "BS"]
+71. idioma, x(50)[{a-z}, {A-Z}, "BS"]
+72. correo, x(50)[{a-z}, {A-Z}, "BS"]
+73. datosTwitter, x(50)[{a-z}, {A-Z}, "BS"]
+
+74. Escribir "Ingresar el nombre del usuario"
+75. Leer nombreusuario
+76. Escribir "Ingresar los nombres completos"
+77. Leer nombres
+78. Escribir "Ingresar los apellidos completos"
+79. Leer apellidos
+80. Escribir "Ingresar la edad"
+81. Leer edad
+82. Escribir "Ingresar la ciudad"
+83. Leer ciudad
+84. Escribir "Ingresar el país"
+85. Leer pais
+86. Escribir "Ingresar el idioma"
+87. Leer idioma
+88. Escribir "Ingresar el correo"
+89. Leer correo
+
+90. datosTwitter <-- "Los datos para Twitter son: " + nombreUsuario + nombres + apellidos + edad + ciudad + pais + idioma + correo
+91. Escribir datosTwitter
+92. fin funcion crearTwitter
+
+
+93. funcion crearWhatsapp()
+94. nombreUsuario, x(50)[{a-z, {A-Z}, "BS"]
+95. telefono, i[0-n]
+96. edad, i[0-n]
+97. ciudad, x(50)[{a-z, {A-Z}, "BS"]
+98. pais, x(50)[{a-z, {A-Z}, "BS"]
+99. datosWhatsapp, x(50)[{a-z}. {A-Z}, {1-10}, "BS"]
+100.Escribir "Ingresar el nombre del usuario"
+101.Leer nombreusuario
+102.Escribir "Ingresar el numero de telefono"
+103.Leer telefono
+104.Escribir "Ingresar la edad"
+105.Leer edad
+106.Escribir "Ingresar la ciudad"
+107.Leer ciudad
+108.Escribir "Ingresar el país"
+109.Leer pais
+
+110.datosWhatsapp <-- "Los datos para Whatsapp son: " + nombreUsuario + telefono + edad + ciudad + pais
+111.Escribir datosWhatsapp
+112.fin funcion crearWhatsapp
+
+
+113.funcion crearTelegram()
+114.nombreUsuario, x(50)[{a-z}, {A-Z}, "BS"]
+115.telefono, i[0-n]
+116.ciudad, x(50)[{a-z}, {A-Z}, "BS"]
+117.pais, x(50)[{a-z}, {A-Z}, "BS"]
+118.area, x(50)[{a-z}, {A-Z}, "BS"]
+119.datosTelegram, x(50)[{a-z}, {A-Z}, {1-10}, "BS"]
+
+120.Escribir "Ingresar el nombre del usuario"
+121.Leer nombreusuario
+122.Escribir "Ingresar el numero de telefono"
+123.Leer telefono
+124.Escribir "Ingresar la ciudad"
+125.Leer ciudad
+126.Escribir "Ingresar el país"
+127.Leer pais
+128.Escribir "Ingresar el area"
+129.Leer area
+
+130.datosTelegram <-- "Los datos para Telegram son: " + nombreUsuario + telefono + ciudad + pais + area
+131.Escribir datosTelegram
+132.fin funcion crearTelegram
+
+
+133.funcion crearSignal()
+134.nombreUsuario, x(50)[{a-z}, {A-Z}, "BS"]
+135.telefono, i[0-n]
+136.ciudad, x(50)[{a-z}, {A-Z}, "BS"]}
+137.pais, x(50)[{a-z}, {A-Z}, "BS"]
+138.hobby, x(50)[{a-z}, {A-Z}, "BS"]
+139.datosSignal, x(50[{a-z}, {A-Z}, {1-10}, "BS"]
+
+140.Escribir "Ingresar el nombre del usuario"
+141.Leer nombreusuario
+142.Escribir "Ingresar el numero de telefono"
+143.Leer telefono
+144.Escribir "Ingresar la ciudad"
+145.Leer ciudad
+146.Escribir "Ingresar el país"
+147.Leer pais
+148.Escribir "Ingresar el hobby"
+149.Leer hobby
+
+150.datosSignal <-- "Los datos para Signal son: " + nombreUsuario + telefono + ciudad + pais + hobby
+151.Escribir datosSignal
+152.fin funcion crearSignal
+
+
+
+153.funcion crearInstagram()
+154.nombreUsuario, x(50)[{a-z}, {A-Z}, "BS"]
+155.edad, i[0-n]
+156.ciudad, x(50)[{a-z}, {A-Z}, "BS"]
+157.correo, x(50)[{a-z}, {A-Z}, "BS"]
+158.datosInstagram, x(50)[{a-z}, {A-Z}, "BS"]
+
+159.Escribir "Ingresar el nombre del usuario"
+160.Leer nombreusuario
+161.Escribir "Ingresar la edad"
+162.Leer edad
+163.Escribir "Ingresar la ciudad"
+164.Leer ciudad
+165.Escribir "Ingresar el correo"
+166.Leer correo
+
+167.datosInstagram <-- "Los datos para Instagram son: " + nombreUsuario + edad + ciudad + correo
+168.Escribir datosInstagram
+169.fin funcion crearInstagram
+
+
+
+170.funcion crearFlickr()
+171.nombreUsuario, x(50)[{a-z}, {A-Z}, "BS"]
+172.correo, x(50)[{a-z}, {A-Z}, "BS"]
+173.datosFlickr, , x(50)[{a-z}, {A-Z}, "BS"]
+
+174.datosFlickr = "Los datos para Flickr son: " + nombreUsuario + correo
+175.Escribir datosFlickr
+176.fin funcion crearFlickr
+
+
+
+177.funcion obtenerMensajefinal(a, i)
+178.(mensajeFinal(3), x(50)[{a-z}, {A-Z}, "BS"] <-- ["Campaña con poca afluencia", "Campaña moderada siga adelante", "Excelente campaña"]
+179.indice, i[0-n]
+180.Para(indice <-- 0, indice < 3) haga
+181.  Si a >= 1 and a <= 5 entonces
+182.     Escribir mensajeFinal[0]
+183.  Caso contrario
+184.     Si a >= 6 and a <= 15 entonces
+185.        Escribir mensajeFinal[1]
+186.     Caso contrario
+187.        Si a >= 16 entonces
+188.           Escribir mensajeFinal[2]
+189.        Fin_Si
+190.     Fin_Si
+191.  Fin_Si
+192.fin funcion obtenerMensajeFinal  

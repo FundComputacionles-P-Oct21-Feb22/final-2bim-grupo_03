@@ -1,4 +1,5 @@
 # Trabajo Final 
+## Leonardo Chuquimarca y Abraham Ayala
 ## Segundo Bimestre
 
 ***
