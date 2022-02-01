@@ -38,11 +38,10 @@
 33.          Fin_Si
 34.       Fin_Si
 35.    Fin_Si
-36.    salida = Escribir "Ingrese no para seguir ingresando datos de cuentas o si para salir"
-37.    Si salida == "si" entonces
-38.       condicion = False
-       Caso contrario
-39.       contador <-- contador + 1
+36.    contador <-- contador + 1
+37.    salida = Escribir "Ingrese no para seguir ingresando datos de cuentas o si para salir"
+38.    Si salida == "si" entonces
+39.       condicion = False
 40.    Fin_Si
 41.  Fin_Mientras
 42.  obtenerMensaje(contador)
